@@ -41,7 +41,7 @@ body {
 }
 
 .content-img-left {
-    width: 200px;
+    width: 250px;
     margin: 0px 20px 5px 5px;
     padding: 5px;
     border-radius: 5px;
@@ -50,7 +50,7 @@ body {
 }
 
 .content-img-right {
-    width: 200px;
+    width: 250px;
     margin: 0px 5px 5px 20px;
     padding: 5px;
     border-radius: 5px;
@@ -70,4 +70,38 @@ body {
     letter-spacing: 6px;
     line-height: 100px;
     text-align: center;
+}
+
+.title {
+    position: relative;
+    z-index: 0;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    color: #999;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.title .caption {
+    position: relative;
+    display: inline-block;
+}
+
+.title .caption .line {
+    position: absolute;
+    top: 13px;
+    width: 600px;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.title .caption .line-l {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.title .caption .line-r {
+    left: 100%;
+    margin-left: 15px;
 }
