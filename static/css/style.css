@@ -114,7 +114,11 @@ body {
     margin-top: auto;
 }
 
-@media screen and (max-width: 500px) {
+.footer-beian {
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
     .footer-container {
         display: inline;
     }
@@ -137,6 +141,9 @@ body {
     .footer-copyright {
         font-size: 13px;
         margin-top: 5px;
+    }
+    .footer-beian {
+        display: block;
     }
 }
 
