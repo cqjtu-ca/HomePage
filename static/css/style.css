@@ -13,8 +13,8 @@ body {
 
 #banner-title {
     left: 0;
-    top: 60%;
-    margin-top: 20px;
+    top: 50%;
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -59,17 +59,85 @@ body {
 }
 
 .footer {
-    height: 100px;
     background-color: #eee;
-    box-shadow: inset 0px 12px 12px -12px #00000040;
+    box-shadow: inset 0px 12px 12px -12px rgba(0, 0, 0, 0.4);
+    display: table;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    margin: 10px auto;
+}
+
+.footer-left {
+    font-size: 21px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.footer-title {
+    border-right: 3px solid #b7b7b7;
+    margin-top: 7px;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.footer-title-small {
+    font-size: 18px;
+    color: #404040;
+    font-weight: 500;
+}
+
+.footer-img {
+    width: 85px;
+    margin: 5px 10px;
+    padding: 0 10px;
+    border-right: 2px #979797 solid;
+}
+
+.footer-right {
+    text-align: left;
 }
 
 .footer-motto {
-    font-size: 30;
     font-weight: 300;
     letter-spacing: 6px;
-    line-height: 100px;
-    text-align: center;
+    font-size: 30px;
+}
+
+.footer-copyright {
+    font-size: 13px;
+    margin-top: auto;
+}
+
+@media screen and (max-width: 500px) {
+    .footer-container {
+        display: inline;
+    }
+    .footer-left {
+        margin-left: 0;
+    }
+    .footer-img {
+        width: 50px;
+        margin: 0;
+        padding: 0;
+        border-right: 0;
+    }
+    .footer-right {
+        text-align: center;
+    }
+    .footer-motto {
+        letter-spacing: 3px;
+        font-size: 25px;
+    }
+    .footer-copyright {
+        font-size: 13px;
+        margin-top: 5px;
+    }
 }
 
 .title {
@@ -86,6 +154,7 @@ body {
 .title .caption {
     position: relative;
     display: inline-block;
+    height: 30px;
 }
 
 .title .caption .line {
